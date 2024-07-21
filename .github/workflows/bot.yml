@@ -1,10 +1,8 @@
 name: Python Script Workflow
 
 on:
-push:
-    branches: [ master ]
-  schedule:
-    - cron: '* * * * *'
+    schedule:
+      - cron: '* * * * *'
 
 jobs:
   run-python-script:
