@@ -6,4 +6,4 @@ headers = {
 }
 request_body = {'tapsCount': 7}
 response = requests.post(URL, json=request_body, headers=headers)
-print(response)
+print(response.text)
