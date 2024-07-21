@@ -23,4 +23,4 @@ jobs:
         pip install -r requirements.txt  # If you have dependencies, add them in requirements.txt
 
     - name: Run Python script
-      run: python path/to/your/script.py  # Replace with the path to your Python script
+      run: python main.py
