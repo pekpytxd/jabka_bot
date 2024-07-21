@@ -1,8 +1,8 @@
 name: Python Script Workflow
 
 on:
-    schedule:
-      - cron: '* * * * *'
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   run-python-script:
