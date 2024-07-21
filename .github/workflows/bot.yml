@@ -8,6 +8,9 @@ on:
   schedule:
     - cron: '0   * * * *'
 
+env:
+  API_KEY: ${{ secrets.TOKEN }}
+
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
