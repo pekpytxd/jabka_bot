@@ -14,6 +14,7 @@ request_body = {'tapsCount': 7}
 count = 0
 while (count < 4320):
     response = requests.post(URL, json=request_body, headers=headers)
-    print(count)
     count += 7
     time.sleep(0.02)
+
+print('We are done here!')
