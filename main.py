@@ -20,6 +20,6 @@ while (count < 5040):
         count -= 7
         print("An exception occurred")
     count += 7
-    time.sleep(0.015)
+    time.sleep(0.01)
 
 print('We are done here!')
