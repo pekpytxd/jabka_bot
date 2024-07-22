@@ -12,9 +12,13 @@ headers = {
 }
 request_body = {'tapsCount': 7}
 count = 0
-while (count < 4320):
-    response = requests.post(URL, json=request_body, headers=headers)
+while (count < 5040):
+    try:
+        response = requests.post(URL, json=request_body, headers=headers)
+    except:
+        count -= 7
+        print("An exception occurred")
     count += 7
-    time.sleep(0.02)
+    time.sleep(0.015)
 
 print('We are done here!')
