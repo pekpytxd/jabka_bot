@@ -30,3 +30,8 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
       run: python main.py
+
+    - name: Run Python script
+      env:
+        TOKEN: ${{ secrets.TOKEN_1 }}
+      run: python main.py
