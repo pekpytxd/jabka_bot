@@ -33,5 +33,5 @@ jobs:
 
     - name: Run Python script
       env:
-        TOKEN: ${{ secrets.TOKEN_1 }}
+        TOKEN: ${{ secrets.TOKEN_2 }}
       run: python main.py
