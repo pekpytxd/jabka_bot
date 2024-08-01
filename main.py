@@ -12,7 +12,7 @@ headers = {
 }
 request_body = {'tapsCount': 7}
 count = 0
-while (count <= 700):
+while (count <= 750):
     res = requests.post(URL, json=request_body, headers=headers)
     print(res)
     count += 1
