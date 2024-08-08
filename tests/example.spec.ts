@@ -18,5 +18,6 @@ async function clickUntilZero(page: Page) {
     await page.locator('.tapper__circle').first().click();
     num--;
   }
+  await page.screenshot({fullPage: true});
 }
 
