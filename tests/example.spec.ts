@@ -6,6 +6,7 @@ test('poxuy', async ({ page }) => {
 });
 
 async function clickUntilZero(page: Page) {
+  await page.waitForTimeout(10000);
   const currentCount = await page.locator('.energy__string span').textContent();
   let num;
   if (currentCount) {
