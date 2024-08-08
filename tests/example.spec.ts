@@ -1,4 +1,4 @@
-import { test, Page } from '@playwright/test';
+import { test, Page, expect } from '@playwright/test';
 
 test('poxuy', async ({ page }) => {
   await page.goto('https://jabka.skin/uk/jab-tap');
@@ -7,7 +7,10 @@ test('poxuy', async ({ page }) => {
 
 async function clickUntilZero(page: Page) {
   await page.waitForTimeout(10000);
+  await expect(page.locator('.energy__string span')).toBeVisible();
   const currentCount = await page.locator('.energy__string span').textContent();
+  console.log(currentCount);
+  
   let num;
   if (currentCount) {
       const numericString = currentCount.replace(/\s+/g, '');
