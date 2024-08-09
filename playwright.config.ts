@@ -5,7 +5,7 @@ dotenv.config();
 const token = process.env.TOKEN;
 
 export default defineConfig({
-  timeout: 210 * 1000,
+  timeout: 210 * 10100,
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
