@@ -2,8 +2,7 @@ import { test, Page, expect } from '@playwright/test';
 
 test('poxuy', async ({ page }) => {
   await page.goto('https://jabka.skin/uk/jab-tap');
-  // await clickUntilZero(page);
-  await expect(page.locator('#lox')).toBeVisible();
+  await clickUntilZero(page);
 });
 
 async function clickUntilZero(page: Page) {

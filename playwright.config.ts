@@ -13,7 +13,7 @@ export default defineConfig({
   workers: 1,
   reporter: 'html',
   use: {
-    trace: 'retain-on-first-failure',
+    video: 'on',
     extraHTTPHeaders: {
       'Authorization': token,
     }
