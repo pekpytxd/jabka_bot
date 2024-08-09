@@ -13,6 +13,7 @@ export default defineConfig({
   workers: 1,
   reporter: 'html',
   use: {
+    screenshot: 'on',
     video: 'on',
     extraHTTPHeaders: {
       'Authorization': token,
